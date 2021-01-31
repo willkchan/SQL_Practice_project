@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /home/wkc/Documents/Springboard/Projects_and_Assignments/SQL_Practice_project/1602668798_SQLFiles_Tier_2_updated_10_13_2020/venv/bin/python "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from jupyter_client.kernelapp import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
